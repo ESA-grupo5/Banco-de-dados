@@ -1,3 +1,5 @@
+CREATE DATABASE flashly;
+
 CREATE TABLE usuario
 (
 	user_id INTEGER PRIMARY KEY,
