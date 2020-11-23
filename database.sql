@@ -6,7 +6,7 @@ CREATE TABLE usuario
 	password TEXT
 );
 
-CREATE table disciplina
+CREATE TABLE disciplina
 (
 	sub_matter_id INTEGER PRIMARY KEY,
 	nm_sub_matter TEXT,
@@ -37,6 +37,15 @@ CREATE TABLE teste
 	teste_id INTEGER PRIMARY KEY,
 	qtd_hits INTEGER,
 	score INTEGER
-)
+);
+
+CREATE TABLE teste_cartao
+(		
+	teste_id INTEGER,
+	fk_card_id INTEGER, 
+FOREIGN key(teste_id) REFERENCES teste(teste_id),
+FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
+);
+
 
 
