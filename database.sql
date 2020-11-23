@@ -32,4 +32,11 @@ CREATE TABLE cartao
 	fk_subject_id INTEGER,
 FOREIGN KEY (fk_subject_id) REFERENCES assunto(subject_id)
 );
+CREATE TABLE teste
+(
+	teste_id INTEGER PRIMARY KEY,
+	qtd_hits INTEGER,
+	score INTEGER
+)
+
 
