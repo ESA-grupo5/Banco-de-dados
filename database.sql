@@ -14,6 +14,7 @@ CREATE table disciplina
 	fk_user_id INTEGER,
 FOREIGN KEY(fk_user_id) REFERENCES usuario(user_id)
 );
+
 CREATE TABLE assunto
 (
 	subject_id INTEGER PRIMARY KEY,
@@ -21,4 +22,14 @@ CREATE TABLE assunto
 	description TEXT,
 	fk_sub_matter_id INTEGER, 
 FOREIGN KEY (fk_sub_matter_id) REFERENCES disciplina(sub_matter_id)
-)
+);
+
+CREATE TABLE cartao
+(
+	card_id INTEGER PRIMARY KEY,
+	termo TEXT,
+	description TEXT,
+	fk_subject_id INTEGER,
+FOREIGN KEY (fk_subject_id) REFERENCES assunto(subject_id)
+);
+
