@@ -2,7 +2,7 @@ CREATE DATABASE flashly;
 
 CREATE TABLE usuario
 (
-	user_id INTEGER PRIMARY KEY,
+	user_id INTEGER PRIMARY KEY AUTOINCREMENT,
 	nm_user TEXT,
 	email TEXT,
 	password TEXT
@@ -49,5 +49,16 @@ FOREIGN key(teste_id) REFERENCES teste(teste_id),
 FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
 );
 
+/*Inserindo usuários*/
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Anderson”, “anderson@email.com”, “12345678”);
 
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Clebson”, “clebson@email.com”, “87654321”);
+
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Ismar”, “ismar@email.com”, “159264837”);
+
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Joana”, “joana@email.com”, “951628473”);
 
