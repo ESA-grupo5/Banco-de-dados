@@ -49,5 +49,17 @@ FOREIGN key(teste_id) REFERENCES teste(teste_id),
 FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
 );
 
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Banco de Dados", "Conheça a disciplina de Banco de dados ", 1);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Engenharia de Software Aplicada", "Disciplina prática de engenharia de software", 2);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Sistemas Operacionais", "", 3);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Programação Orientada a Objetos", "", 4);
+
 
 
