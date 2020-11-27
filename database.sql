@@ -74,3 +74,13 @@ VALUES("Sistemas Operacionais", "", 3);
 
 INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
 VALUES("Programação Orientada a Objetos", "", 4);
+
+/*Inserindo assuntos*/
+INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
+VALUES(“Relacionamentos ”,”Faça o relacionamento de suas entidades”,1);
+INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
+VALUES(“Tesde de usabilidade”,”Como fazer testes de usabilidade”,2);
+INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
+VALUES(“Arquivos”,”Como os arquivos são gerenciados”,3);
+INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
+VALUES(“Classes”,””,4);
