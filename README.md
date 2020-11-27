@@ -14,7 +14,7 @@ Após isso, você vai pecisar de um SGBD para sqlite, ou simplesmente executar [
 
 ## Consultas
 
-Todas as consultas estão dispostas em outro arquivo(a parte do database.sql) neste repositório e para informações mais detalhadas você pode acessar o documento clicando neste [link](https://docs.google.com/document/d/1JbqEUPDBTMbnUetJX7zMlQ1E_SgQ6iW3BeQn2o8u8tY/edit?usp=sharing). Abaixo segue as entidades encontradas do nosso projeto e segue os comandos necessários para realização de consultas neste banco.
+Todas as consultas estão dispostas em outro [arquivo](consultas.sql) neste repositório e para informações mais detalhadas você pode acessar o documento clicando neste [link](https://docs.google.com/document/d/1JbqEUPDBTMbnUetJX7zMlQ1E_SgQ6iW3BeQn2o8u8tY/edit?usp=sharing). Abaixo segue as entidades encontradas do nosso projeto e segue os comandos necessários para realização de consultas neste banco.
 
 ### Usuário
 Se você deseja recuperar todos usuário, use o comando:
