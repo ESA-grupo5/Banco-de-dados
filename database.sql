@@ -1,5 +1,3 @@
-CREATE DATABASE flashly;
-
 CREATE TABLE usuario
 (
 	user_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -45,8 +43,11 @@ CREATE TABLE teste_cartao
 (		
 	teste_id INTEGER,
 	fk_card_id INTEGER, 
-FOREIGN key(teste_id) REFERENCES teste(teste_id),
-FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
+	FOREIGN key(teste_id) REFERENCES teste(teste_id),
+	FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+
 );
 
 /*Inserindo usuários*/
