@@ -85,7 +85,7 @@ VALUES(“Arquivos”,”Como os arquivos são gerenciados”,3);
 INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
 VALUES(“Classes”,””,4);
 
-/ * Inserindo Cartão*/
+/* Inserindo Cartão*/
 INSERT INTO cartao(termo,description,fk_subject_id)
 VALUES(“Tipos de Relacionamentos”,”Relacionamento 0 para n, Relacionamento 1 para 1, Relacionamento 1...n para 1*, Relacionamento n...m para *...*”, 1);
 INSERT INTO cartao(termo,description,fk_subject_id)
@@ -95,7 +95,7 @@ VALUES(“Formas de armazenar”,”Em páginas, endereços sequenciais e endere
 INSERT INTO cartao(termo,description,fk_subject_id)
 VALUES(“Composição de uma classe”,”Atributos, Métodos Construtores e Destrutores”, 4);
 
-/ * Inserindo Testes */
+/* Inserindo Testes */
 INSERT INTO teste(qtd_hits,score)
 VALUES(10, 530);
 INSERT INTO teste(qtd_hits,score)
@@ -105,7 +105,7 @@ VALUES(7, 450);
 INSERT INTO teste(qtd_hits,score)
 VALUES(2, 70);
 
-/ * Inserindo o teste de cartão */
+/* Inserindo o teste de cartão */
 INSERT INTO teste_cartao(fk_card_id)
 VALUES(1);
 INSERT INTO teste_cartao(fk_card_id)
