@@ -89,7 +89,7 @@ VALUES(“Classes”,””,4);
 INSERT INTO cartao(termo,description,fk_subject_id)
 VALUES(“Tipos de Relacionamentos”,”Relacionamento 0 para n, Relacionamento 1 para 1, Relacionamento 1...n para 1*, Relacionamento n...m para *...*”, 1);
 INSERT INTO cartao(termo,description,fk_subject_id)
-VALUES(“Tipos de entidades”,”Fraca, Forte e Associativa.”, 1);
+VALUES(“Tipos de Teste”,”Teste de Usabilidade In-Person ou In-House e Testes Remotos Não Moderados de Usabilidade”, 2);
 INSERT INTO cartao(termo,description,fk_subject_id)
 VALUES(“Formas de armazenar”,”Em páginas, endereços sequenciais e endereços inseridos em uma lista encadeada”, 3);
 INSERT INTO cartao(termo,description,fk_subject_id)
