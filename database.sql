@@ -2,7 +2,7 @@ CREATE DATABASE flashly;
 
 CREATE TABLE usuario
 (
-	user_id INTEGER PRIMARY KEY,
+	user_id INTEGER PRIMARY KEY AUTOINCREMENT,
 	nm_user TEXT,
 	email TEXT,
 	password TEXT
@@ -10,7 +10,7 @@ CREATE TABLE usuario
 
 CREATE TABLE disciplina
 (
-	sub_matter_id INTEGER PRIMARY KEY,
+	sub_matter_id INTEGER PRIMARY KEY AUTOINCREMENT,
 	nm_sub_matter TEXT,
 	description TEXT,
 	fk_user_id INTEGER,
@@ -49,6 +49,33 @@ FOREIGN key(teste_id) REFERENCES teste(teste_id),
 FOREIGN key(fk_card_id) REFERENCES cartao(card_id)
 );
 
+/*Inserindo usuários*/
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Anderson”, “anderson@email.com”, “12345678”);
+
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Clebson”, “clebson@email.com”, “87654321”);
+
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Ismar”, “ismar@email.com”, “159264837”);
+
+INSERT INTO usuario (nm_user, email, password)
+VALUES(“Joana”, “joana@email.com”, “951628473”);
+
+/*Inserindo disciplinas*/
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Banco de Dados", "Conheça a disciplina de Banco de dados ", 1);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Engenharia de Software Aplicada", "Disciplina prática de engenharia de software", 2);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Sistemas Operacionais", "", 3);
+
+INSERT INTO disciplina (nm_sub_matter, description, fk_user_id )
+VALUES("Programação Orientada a Objetos", "", 4);
+
+/*Inserindo assuntos*/
 INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
 VALUES(“Relacionamentos ”,”Faça o relacionamento de suas entidades”,1);
 INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
@@ -57,5 +84,3 @@ INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
 VALUES(“Arquivos”,”Como os arquivos são gerenciados”,3);
 INSERT INTO assunto (nm_subject, description, fk_sub_matter_id)
 VALUES(“Classes”,””,4);
-
-
