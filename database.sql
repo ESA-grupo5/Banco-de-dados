@@ -10,7 +10,7 @@ CREATE TABLE usuario
 
 CREATE TABLE disciplina
 (
-	sub_matter_id INTEGER PRIMARY KEY,
+	sub_matter_id INTEGER PRIMARY KEY AUTOINCREMENT,
 	nm_sub_matter TEXT,
 	description TEXT,
 	fk_user_id INTEGER,
